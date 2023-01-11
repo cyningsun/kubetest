@@ -7,7 +7,7 @@ clean:
 	kubectl delete -f ./hostnetwork.yaml
 
 kubectl:
-	@echo "nginx pod ip"
+	@echo "nginx pod using hostnetwork"
 	@echo "------------------"
 	kubectl get po -o wide | grep hostnetwork | awk '{ print $$6 }'
 	@echo "\nClusterFirstWithHostNet setting dns server to cluster dns"

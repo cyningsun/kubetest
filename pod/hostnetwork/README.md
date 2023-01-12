@@ -1,6 +1,6 @@
 # Introduction
 
-With hostNetwork you can expose container ip and port to the external network at the address <hostIP>:<hostPort>, where the hostIP is the IP address of the Kubernetes node where the container is running and the hostPort is the port requested by the user. 
+With hostNetwork you can expose container ip and port to the external network at the address \<hostIP\>:\<hostPort\>, where the hostIP is the IP address of the Kubernetes node where the container is running and the hostPort is the port requested by the user. 
 
 Pod is serving at hostIP. So podIP is exactly the same as hostIP
 

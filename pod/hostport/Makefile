@@ -1,5 +1,3 @@
-
-
 install:
 	kubectl apply -f ./hostport.yaml
 

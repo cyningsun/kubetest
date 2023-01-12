@@ -1,4 +1,8 @@
 # kubetest
+Kubetest is a repo built for kubernetes feature test. Each feature will be arranged in a unique directory with:
+- README.md: introduce the background and how the case works
+- Makefile: commands needed when running test case
+- xxx.yaml: spec of testcase.
 
 ## For macos
 As you may know, Docker Desktop on macOS runs a Linux VM in the background to run containers on macOS (since containers are a Linux concept). However, that VM is well hidden from view and you typically only interact with it when you start Docker Desktop or when you need to clean up images in the VM itself.

@@ -10,6 +10,7 @@ $ORIGIN example.com.
 	3600 IN NS a.iana-servers.net.
 	3600 IN NS b.iana-servers.net.
 
+www    IN A     192.168.8.7
 www    IN A     192.168.8.8
 www.cname    IN CNAME  www
 

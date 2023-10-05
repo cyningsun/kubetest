@@ -1,0 +1,6 @@
+coredns_init.sh: create coredns server. 
+
+- A Record: www.example.com
+- CNAME Record: www.cname.example.com
+- Cache enable 
+- loadbalance enable 

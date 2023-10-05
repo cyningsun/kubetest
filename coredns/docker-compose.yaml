@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+    coredns:
+        image: coredns/coredns
+        restart: on-failure # other option: always - if you want persistent through host reboots
+        command: "-conf /etc/coredns/Corefile"
+        expose:
+            - '53'
+            - '53/udp'
+        ports:
+            - '53:53'
+            - '53:53/udp'
+        volumes:
+            - './etc/db:/etc/coredns/db'
+            - './etc:/etc/coredns'

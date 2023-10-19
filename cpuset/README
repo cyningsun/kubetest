@@ -1,0 +1,3 @@
+# README
+- docker-compose up -d: create nginx with 2 worker and cpu pinning to 2 cores(0,1)
+- cpuset.sh: pinning nginx worker to 2 cores(0,1)

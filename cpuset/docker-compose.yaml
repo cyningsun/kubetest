@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nginx:
+    cpuset: "0,1"
+    restart: always
+    container_name: nginx
+    image: ubuntu/nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./etc/nginx.conf:/etc/nginx/nginx.conf
+      - ./cpuset.sh:/cpuset.sh
+    environment:
+      - NGINX_PORT=80
+      - TZ=Asia/Shanghai
+    privileged: true
